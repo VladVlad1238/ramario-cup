@@ -1,4 +1,5 @@
 @import "./header";
+@import "./mainSection";
 @import "./footer";
 
 .body {
@@ -10,4 +11,78 @@
     rgba(20, 20, 20, 1) 20%,
     rgba(10, 10, 10, 1) 100%
   );
+}
+
+/* Общий сброс */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базовый стиль документа */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  text-rendering: optimizeSpeed;
+}
+
+/* Убираем стандартные стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем точки и цифры у списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Убираем рамки у кнопок и полей ввода */
+button,
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+}
+
+/* Картинки адаптивные */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Убираем жирность у заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* Делаем кнопки кликабельными */
+button {
+  cursor: pointer;
 }
